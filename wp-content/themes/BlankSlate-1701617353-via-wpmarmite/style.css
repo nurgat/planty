@@ -1,0 +1,418 @@
+/*
+Theme Name: BlankSlate Enfant
+Description: Theme enfant de BlankSlate. Vous pouvez maintenant effectuer vos modifications en toute sécurité.
+Author: WPMarmite
+Author URI: https://wpmarmite.com
+Template: BlankSlate
+Version: 1.0
+*/
+
+.elementor-element.elementor-element-f9ef319{
+	padding:0 !important;
+}
+
+/* Header - Nav */
+
+.header h1{
+	display:none;
+}
+
+header.header{
+	display:none;
+}
+/* Padding Header */
+.elementor-810 .elementor-element.elementor-element-3de1334{
+	padding:0;
+}
+
+/* Button Commander Nav */
+
+#menu-item-396{
+width: 236px;
+height: 80px;
+background-color:#DC9F96;
+display:flex;
+justify-content:center
+}
+#menu-item-396:hover{
+	background-color:#C02E44;
+}
+#menu-item-396 a{color: #FFF;
+font-family: Syne;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* Lien Nous rencontrer Nav */
+
+#menu-item-398{
+	display:flex
+}
+
+#menu-item-398 a:hover{
+font-family: Syne;
+font-size: 13px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color:#000;
+}
+/* Lien Admin Nav */
+
+#menu-item-397{
+	display:flex
+}
+
+	/* Padding page d'accueil */
+
+.elementor-29 .elementor-element.elementor-element-52295bd:not(.elementor-motion-effects-element-type-background), .elementor-29 .elementor-element.elementor-element-52295bd > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #ECE2DA;
+    padding: 0px;
+}
+
+/* Padding derniere image page d'accueil */
+
+.elementor-29 .elementor-element.elementor-element-1f67501 {
+    
+    padding: 0px;
+}
+
+/* Page COMMANDER - Padding Bloc de Produits */
+
+.elementor-394 .elementor-element.elementor-element-328eccf.e-con {
+    
+    padding: 0px;
+}
+
+/* Page COMMANDER - CHAMPS QUANTITE PRODUITS */
+
+input[type="number" i]{
+	width:39px;
+	height:56px;
+	font-family: Inter;
+	font-size:16px;
+	font-weight:400;
+	line-height: 19.36px;
+	padding-left:10px;
+}
+
+/* Page COMMANDER - PADDING AUTOUR DES FORMULAIRES */
+
+/* Padding autour du formulaire Vos informations */
+
+.elementor-394 .elementor-element.elementor-element-92096f4.e-con{
+	padding:0px;
+}
+
+/* Padding autour du formulaire Livraison */
+
+.elementor-394 .elementor-element.elementor-element-abc0ec8.e-con {
+    --flex-grow: 0;
+    --flex-shrink: 0;
+    padding: 0;
+}
+
+/* Padding autour du Séparateur des formulaires */
+
+.elementor-394 .elementor-element.elementor-element-4e3fb87 {
+    padding: 0;
+}
+
+/* Page COMMANDER - FORMULAIRES */
+
+input[type="text"],input[type="email"]{
+	width:383px;
+	height:71px;
+	Border-radius:7px;
+	margin-bottom:30px;
+	border: transparent;	
+}
+
+label {
+font-family: Syne;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#fff;
+display:flex;
+margin-bottom: 15px;
+}
+
+/* Page COMMANDER - DISPOSITION BLOC IMAGES */
+.elementor-394 .elementor-element.elementor-element-328eccf.e-con {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Page COMMANDER - DISPOSITION BLOCS QUANTITE PRODUIT */
+
+.elementor-394 .elementor-element.elementor-element-574755b.e-con {
+    /* --align-self: center; */
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 1er bloc Fraise */
+
+.elementor-394 .elementor-element.elementor-element-8cd98d5{
+	padding:0;
+	width:192px;
+}
+
+/* 2eme bloc Pamplemousse */
+.elementor-394 .elementor-element.elementor-element-044ee55{
+	padding:0;
+	width:192px;
+}
+/* 3eme bloc Framboise */
+.elementor-394 .elementor-element.elementor-element-5402dcc{
+	padding:0;
+	width:192px;
+}
+/* 4eme bloc Citron */
+.elementor-394 .elementor-element.elementor-element-ca0c75d{
+	padding:0;
+	width:192px;
+}
+/* Page COMMANDER - SEPARATEUR FORMULAIRES */
+
+.separator {
+      height: 447px;
+      width: 1px;
+      background-color: #fff;
+      margin-left:5px;
+			/* Ajout de marges pour l'espace autour du séparateur */
+    }
+
+/* Page COMMANDER - BUTTON FORMULAIRES */
+
+.elementor-394 .elementor-element.elementor-element-d3e2e20 .elementor-button {
+font-family: "Syne", Sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+background-color: #E0B9B4;
+width: 198px;
+height: 55px;
+padding: 9px, 57px, 9px, 56px;
+border-radius: 5px;
+}
+
+.elementor-394 .elementor-element.elementor-element-d3e2e20 .elementor-button:hover{
+	background-color:#C02E44;
+}
+.elementor-button span {
+    text-decoration: inherit;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Page NOUS RENCONTRER - SECTION DU HAUT - FLEURE ET TITRE */
+
+.flower-title h1{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.flower-title h1::before{
+    width: 150px;
+    height: 150px;
+    background: url("/wp-content/uploads/2023/11/Group-2.png");
+    background-size: cover;
+    content:"";
+    left: -176px;
+    top: -99px;
+    position: absolute;
+}
+
+/* Page NOUS RENCONTRER - FORMULAIRES */
+
+.bloc-formulaire{
+	position:relative;
+	width:383px !important;
+	margin:0 auto !important;
+}
+
+/* IMAGE CANETTES BAS */
+.elementor-101 .elementor-element.elementor-element-434b131{
+	padding:0 !important;
+}
+
+/* Média query pour les écrans entre 320px et 768px de largeur - MOBILE */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+	
+        /* Position Fleur verte section haut - Page Nous rencontrer */
+
+        .flower-title h1::before {
+            width: 60px;
+            height: 60px;
+            background: url(/wp-content/uploads/2023/11/Group-2.png);
+            background-size: cover;
+            content: "";
+            left: 12px;
+            top: -26px;
+            position: absolute;
+        }
+
+/* Position Canette section haut - Page d'accueil */
+			
+			.elementor-29 .elementor-element.elementor-element-236fc6b img {
+    max-width: 100%;
+    height: 400px;
+    margin-top: -650px;
+}
+			
+			.elementor-101 .elementor-element.elementor-element-fdfab02{
+				max-width:320px;
+				padding:0;
+		   }
+			
+			
+      input,
+      textarea,label {
+        max-width:210px;
+				margin-left:40px;
+			  }
+			
+			div button{
+				margin-right:30px;
+				max-width:100px;
+			}
+			/* Section Commentaire - Espace entre le titre et le texte */
+
+.elementor-29 .elementor-element.elementor-element-089e66c .elementor-image-box-wrapper .elementor-image-box-img{
+				margin-bottom:20px;
+			}
+
+.elementor-29 .elementor-element.elementor-element-08f7b99 .elementor-image-box-wrapper .elementor-image-box-img{
+				margin-bottom:20px;
+			}
+			
+.elementor-29 .elementor-element.elementor-element-c8152d9 .elementor-image-box-wrapper .elementor-image-box-img{
+				margin-bottom:20px;
+			}
+			
+			/* Séparateur horizontal */
+			.separator {
+      width: 250px;
+			height:1px;
+      background-color: #fff;
+      margin-bottom:5px;
+			margin-top:5px
+			/* Ajout de marges pour l'espace autour du séparateur */
+    }
+			/* Largeur Bloc formulaire page Commander */
+			form.commander{
+				width:284px
+			}
+			form.commander label{
+				width:284px;
+			}
+			form.commander input{
+				width:284px;
+			}
+			form.commander textarea{
+				width:284px;
+			}
+	 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	
+/* Section du haut - Page Nous-rencontrer */
+
+    .flower-title h1::before{
+        width: 90px;
+        height: 90px;
+        background: url(/wp-content/uploads/2023/11/Group-2.png);
+        background-size: cover;
+        content: "";
+        left: -92px;
+        top: -66px;
+        position: absolute;
+    }
+	/* Section Formulaire - Page Nous-rencontrer */
+	
+	input,textarea,label{
+		width:383px;
+		}
+	form.nous-rencontrer{
+		max-width:383px;
+	}
+	
+	.elementor-29 .elementor-element.elementor-element-c8152d9 {
+    width: 233px;
+    height: 103px;
+			  }
+	
+/* Section Formulaire - Page Commander */
+
+/* Section Formulaire - Bloc Formulaire Vos Informations */
+
+.elementor-394 .elementor-element.elementor-element-aa9fb2d.elementor-element {
+    
+    max-width: 290px;
+}
+/* Section Formulaire - Bloc Formulaire Livraison */
+
+	.elementor-394 .elementor-element.elementor-element-3f8dad8 {
+    --width: 290px;
+}
+.elementor-394 .elementor-element.elementor-element-74ca4ad.elementor-element{
+	max-width:290px;
+}
+	
+	.elementor-394 .elementor-element.elementor-element-abc0ec8 {
+    
+    width: 290px;
+}
+
+form.commander label{
+	width:290px;
+}
+	form.commander input{
+	width:290px;
+}
+	
+	form.commander textarea{
+	width:290px;
+}
+
+/* Section Blocs Produit - Page Commander */
+
+.elementor-394 .elementor-element.elementor-element-bae8315 {
+    --width: 192px;
+    padding: 0;
+}
+
+.elementor-394 .elementor-element.elementor-element-4e30bf4 {
+    --width: 192px;
+	padding: 0;
+}
+
+.elementor-394 .elementor-element.elementor-element-0200878 {
+    --width: 192px;
+	padding: 0;
+}
+
+.elementor-394 .elementor-element.elementor-element-cfdf52f {
+    --width: 192px;
+    padding: 0;
+}
+
+.elementor-394 .elementor-element.elementor-element-574755b {
+    --width: 670px;
+}
+}
