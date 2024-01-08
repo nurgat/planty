@@ -80,6 +80,31 @@ color:#000;
     padding: 0px;
 }
 
+/* Boutton commander page d'accueil */
+
+.elementor-29 .elementor-element.elementor-element-f4439b4 .elementor-button{
+width: 198px;
+height: 55px;
+top: 2128px;
+left: 621px;
+padding: 9px, 57px, 9px, 56px;
+border-radius: 5px;
+}
+
+.elementor-29 .elementor-element.elementor-element-f4439b4 .elementor-button span{
+font-family: Syne;
+font-size: 15px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFF;
+}
+
+.elementor-29 .elementor-element.elementor-element-f4439b4 .elementor-button:hover{
+	background-color: #C02E44;
+}
+
 /* Page COMMANDER - Padding Bloc de Produits */
 
 .elementor-394 .elementor-element.elementor-element-328eccf.e-con {
