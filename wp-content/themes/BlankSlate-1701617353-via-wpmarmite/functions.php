@@ -6,20 +6,23 @@ function wpchild_enqueue_styles(){
   wp_enqueue_style( 'wpm-BlankSlate-style', get_template_directory_uri() . '/style.css' );
 }
 
-// Ajoute un filtre pour modifier les éléments du menu
-add_filter('wp_nav_menu_items', 'ajouter_lien_admin_au_menu', 10, 2);
+
+// Ajoute un filtre pour modifier les éléments du menu de navigation WordPress
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 
 // Fonction appelée lors du filtrage des éléments du menu
-function ajouter_lien_admin_au_menu($items, $args) {
+function add_admin_link($items, $args) {
     // Vérifie si l'utilisateur est connecté
     if (is_user_logged_in()) {
-        // Vérifie si le menu actuel est le menu principal
-        $menu_principal = 'Menu Header (Main Menu)';
-        if ($args->theme_location == $menu_principal) {
-            // Ajoute le lien "Admin" au menu principal
-            $items .= '<li>' . wp_loginout(home_url('/wp-admin/'), false) . '</li>';
-        }
+        // Si l'utilisateur est connecté, ajoute un nouvel élément de menu avec le lien "Admin"
+        $items .= '<li class="bloc-hfe-menu-item"><a class="hfe-menu-item" href="'. get_admin_url() .'">Admin</a></li>';
     }
 
+    // Retourne les éléments du menu, avec ou sans le lien "Admin" ajouté
     return $items;
 }
+
+
+
+
+

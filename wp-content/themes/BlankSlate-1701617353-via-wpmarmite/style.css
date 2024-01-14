@@ -32,13 +32,16 @@ width: 236px;
 height: 80px;
 background-color:#DC9F96;
 display:flex;
-justify-content:center
+justify-content:center;
+position: relative;
+left: 79px;
 }
+
 #menu-item-396:hover{
 	background-color:#C02E44;
 }
 #menu-item-396 a{color: #FFF;
-font-family: Syne;
+font-family: "Syne", Sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -52,7 +55,7 @@ line-height: normal;
 }
 
 #menu-item-398 a:hover{
-font-family: Syne;
+font-family: "Syne", Sans-serif;
 font-size: 13px;
 font-weight: 700;
 line-height: 16px;
@@ -62,9 +65,12 @@ color:#000;
 }
 /* Lien Admin Nav */
 
-#menu-item-397{
-	display:flex
+li.bloc-hfe-menu-item {
+    position: relative;
+    right: 276px;
+	display: flex;
 }
+
 
 	/* Padding page d'accueil */
 
@@ -92,7 +98,7 @@ border-radius: 5px;
 }
 
 .elementor-29 .elementor-element.elementor-element-f4439b4 .elementor-button span{
-font-family: Syne;
+font-family: "Syne", Sans-serif;
 font-size: 15px;
 font-weight: 400;
 line-height: 37px;
@@ -157,7 +163,7 @@ input[type="text"],input[type="email"]{
 }
 
 label {
-font-family: Syne;
+font-family: "Syne", Sans-serif;
 font-size: 20px;
 font-weight: 400;
 line-height: 24px;
@@ -165,7 +171,6 @@ letter-spacing: 0em;
 text-align: left;
 color:#fff;
 display:flex;
-margin-bottom: 15px;
 }
 
 /* Page COMMANDER - DISPOSITION BLOC IMAGES */
@@ -207,42 +212,80 @@ margin-bottom: 15px;
 	padding:0;
 	width:192px;
 }
-/* Page COMMANDER - SEPARATEUR FORMULAIRES */
+/* Page COMMANDER - FORMULAIRES */
 
-.separator {
-      height: 447px;
-      width: 1px;
-      background-color: #fff;
-      margin-left:5px;
-			/* Ajout de marges pour l'espace autour du séparateur */
-    }
+h2.section-title-formulaire {
+    font-family:"Syne", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+	margin-bottom: 18px;
+}
 
-/* Page COMMANDER - BUTTON FORMULAIRES */
+.elementor-element.elementor-element-8640080.elementor-widget.elementor-widget-shortcode {
+    width: 867px;
+    display: flex;
+    justify-content: center;
+}
+.elementor-394 .elementor-element.elementor-element-8846d15.e-con {
+    --align-self: center;
+    padding: 0;
+}
 
-.elementor-394 .elementor-element.elementor-element-d3e2e20 .elementor-button {
+.direction-row {
+    display: flex;
+	flex-direction: row;
+    width: 867px;
+    justify-content: space-between;
+}
+
+	.separator {
+		height: 447px;
+		width: 1px;
+		background-color: #fff;
+		margin-left: 5px;
+		
+	}
+.direction-row label{
 font-family: "Syne", Sans-serif;
 font-size: 20px;
 font-weight: 400;
 line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+}
+/* Page COMMANDER - BUTTON FORMULAIRES */
+
+.bloc-bouton-commander {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+button#bouton-commander {
+font-family: "Syne", Sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: center;
 background-color: #E0B9B4;
 width: 198px;
 height: 55px;
 padding: 9px, 57px, 9px, 56px;
 border-radius: 5px;
+border: none;
+color: #FFF;
 }
 
-.elementor-394 .elementor-element.elementor-element-d3e2e20 .elementor-button:hover{
+button#bouton-commander:hover{
 	background-color:#C02E44;
 }
-.elementor-button span {
-    text-decoration: inherit;
-    font-family: Syne;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: 0em;
-    text-align: center;
-}
+
 
 /* Page NOUS RENCONTRER - SECTION DU HAUT - FLEURE ET TITRE */
 
@@ -271,6 +314,68 @@ border-radius: 5px;
 	margin:0 auto !important;
 }
 
+.nous-rencontrer label{
+	display: block;
+	color: #000000;
+	font-family: "Syne, sans-serif";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.nous-rencontrer input{
+	width: 383px;
+	height: 71px;
+	flex-shrink: 0;
+	margin-bottom: 15px;
+	border-radius: 7px;
+	background: #FFF;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+.nous-rencontrer textarea{
+	width: 383px;
+	height: 237px;
+	flex-shrink: 0;
+	margin-bottom: 15px;
+	resize: none;
+	border-radius: 7px;
+	border:none;
+	background: #FFF;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+	position :relative;
+	z-index:2; 
+}
+
+.nous-rencontrer .bloc-button-nous-rencontrer{
+	display:flex;
+	justify-content:center;
+	width: 383px;
+}
+
+.nous-rencontrer button{
+	display: flex;
+	width: 198px;
+	height: 55px;
+	padding: 9px 0px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;border-radius: 5px;
+	background: #E0B9B4;color: #FFF;
+	text-align: center;
+	font-family: "Syne", Sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 37px;
+	border:none;
+}
+.nous-rencontrer button:hover{
+	background-color:#C02E44;
+	  }
 /* IMAGE CANETTES BAS */
 .elementor-101 .elementor-element.elementor-element-434b131{
 	padding:0 !important;
@@ -279,6 +384,51 @@ border-radius: 5px;
 /* Média query pour les écrans entre 320px et 768px de largeur - MOBILE */
     @media screen and (min-width: 320px) and (max-width: 767px) {
 	
+		/* Position Logo Header */
+
+		.elementor-810 .elementor-element.elementor-element-195a7ad > .elementor-widget-container {
+			margin: 20px 0px 0px 20px;
+		}
+
+		/* Position Menu Header */
+
+		.hfe-nav-menu__breakpoint-mobile .hfe-active-menu + .hfe-nav-menu__layout-horizontal .hfe-nav-menu {
+			visibility: visible;
+			opacity: 1;
+			display: flex;
+			flex-direction: column;	
+		}
+
+		#menu-item-398 {
+			display: flex;
+			justify-content: center;
+		}
+
+		#menu-item-396 {
+			width: 236px;
+			height: 80px;
+			background-color: #DC9F96;
+			display: flex;
+			justify-content: center;
+			position: unset;
+		}
+
+		#menu-item-396 a {
+			color: #FFF;
+			font-family: "Syne", Sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			background-color: #DC9F96;
+		}
+
+		li.bloc-hfe-menu-item {
+			position: unset;
+			display: flex;
+			justify-content: center;
+		}
+
         /* Position Fleur verte section haut - Page Nous rencontrer */
 
         .flower-title h1::before {
@@ -304,18 +454,43 @@ border-radius: 5px;
 				max-width:320px;
 				padding:0;
 		   }
-			
-			
-      input,
-      textarea,label {
-        max-width:210px;
-				margin-left:40px;
+/* Position Input Quantité Produit - Page Commander */
+
+		.elementor-394 .elementor-element.elementor-element-f88476a > .elementor-widget-container {
+			margin: 0;
+		}
+		.elementor-394 .elementor-element.elementor-element-9563e5a > .elementor-widget-container {
+			margin: 0;
+		}
+		.elementor-394 .elementor-element.elementor-element-0ba2356 > .elementor-widget-container {
+			margin: 0;
+		}
+		.elementor-394 .elementor-element.elementor-element-161c0c0 > .elementor-widget-container {
+			margin: 0;
+		}
+	/* Section Formulaire */		
+		   input,
+		   textarea,label {
+        max-width:250px;
+		display: flex;
+		justify-content: center;
+		margin: auto;		
 			  }
 			
-			div button{
-				margin-right:30px;
-				max-width:100px;
+			  div button {
+				margin: 0;
+				max-width: 140px;
 			}
+
+			.nous-rencontrer .bloc-button-nous-rencontrer {
+				display: flex;
+				justify-content: center;
+				width: 320px;
+			}
+
+			.nous-rencontrer button:hover{
+				background-color:#C02E44;
+				  }
 			/* Section Commentaire - Espace entre le titre et le texte */
 
 .elementor-29 .elementor-element.elementor-element-089e66c .elementor-image-box-wrapper .elementor-image-box-img{
@@ -329,29 +504,36 @@ border-radius: 5px;
 .elementor-29 .elementor-element.elementor-element-c8152d9 .elementor-image-box-wrapper .elementor-image-box-img{
 				margin-bottom:20px;
 			}
-			
+			h2.section-title-formulaire {
+				font-family:"Syne", Sans-serif;
+				font-size: 23px;
+				font-weight: 700;
+				line-height: 36px;
+				letter-spacing: 0em;
+				text-align: left;
+				color: white;
+				margin-bottom: 18px;
+				text-align: center;
+			}
 			/* Séparateur horizontal */
+			
 			.separator {
-      width: 250px;
-			height:1px;
-      background-color: #fff;
-      margin-bottom:5px;
-			margin-top:5px
-			/* Ajout de marges pour l'espace autour du séparateur */
-    }
-			/* Largeur Bloc formulaire page Commander */
-			form.commander{
-				width:284px
+				height: 1px;
+				width: 250px;
+				background-color: #fff;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin: auto;
+				margin-bottom: 20px;
+				margin-top: 20px;
 			}
-			form.commander label{
-				width:284px;
-			}
-			form.commander input{
-				width:284px;
-			}
-			form.commander textarea{
-				width:284px;
-			}
+	.direction-row {
+		display: flex;
+		flex-direction: column;
+		width: 290px;
+		/* justify-content: space-between; */
+	}
+			
 	 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -373,7 +555,7 @@ border-radius: 5px;
 	input,textarea,label{
 		width:383px;
 		}
-	form.nous-rencontrer{
+	div.nous-rencontrer{
 		max-width:383px;
 	}
 	
@@ -382,39 +564,118 @@ border-radius: 5px;
     height: 103px;
 			  }
 	
+	.nous-rencontrer label{
+		display: block;
+		color: #000;
+		font-family: "Syne", Sans-serif;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.nous-rencontrer input{
+		width: 383px;
+		height: 71px;
+		flex-shrink: 0;
+		margin-bottom: 15px;
+		border-radius: 7px;
+		background: #FFF;
+		box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+	}
+
+	.nous-rencontrer textarea{
+		width: 383px;
+		height: 237px;
+		flex-shrink: 0;margin-bottom: 15px;
+		resize: none;
+		border-radius: 7px;
+		border:none;
+		background: #FFF;
+		box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+		position :relative;
+		z-index:2" 
+	}
+
+	.nous-rencontrer button{
+		display: flex;
+		width: 198px;
+		height: 55px;
+		padding: 9px 0px;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;border-radius: 5px;
+		background: #E0B9B4;color: #FFF;
+		text-align: center;
+		font-family: Syne;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 37px;
+		border:none;
+	}
+
+	.nous-rencontrer button:hover{
+		background-color:#C02E44;
+		  }
+	
 /* Section Formulaire - Page Commander */
 
-/* Section Formulaire - Bloc Formulaire Vos Informations */
-
-.elementor-394 .elementor-element.elementor-element-aa9fb2d.elementor-element {
-    
-    max-width: 290px;
+h2.section-title-formulaire {
+	font-family:"Syne", Sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: white;
+	margin-bottom: 18px;
+	text-align: center;
 }
-/* Section Formulaire - Bloc Formulaire Livraison */
 
-	.elementor-394 .elementor-element.elementor-element-3f8dad8 {
-    --width: 290px;
+div.elementor-shortcode{
+	max-width: 650px;
 }
-.elementor-394 .elementor-element.elementor-element-74ca4ad.elementor-element{
-	max-width:290px;
+.direction-row {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+	
+}
+
+.separator {
+	height: 1px;
+	width: 383px;
+	background-color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+div.commander label{
+	width:290px;
+}
+	div.commander input{
+	width:290px;
 }
 	
-	.elementor-394 .elementor-element.elementor-element-abc0ec8 {
-    
-    width: 290px;
-}
-
-form.commander label{
-	width:290px;
-}
-	form.commander input{
-	width:290px;
-}
-	
-	form.commander textarea{
+	div.commander textarea{
 	width:290px;
 }
 
+.direction-row{
+	display: flex;
+	flex-direction: column;
+}
+
+input,textarea,label {
+        max-width: 383px;
+		display: flex;
+		justify-content: center;
+		margin: auto;		
+			  }
 /* Section Blocs Produit - Page Commander */
 
 .elementor-394 .elementor-element.elementor-element-bae8315 {
