@@ -11,8 +11,6 @@ Version: 1.0
 	padding:0 !important;
 }
 
-/* Header - Nav */
-
 .header h1{
 	display:none;
 }
@@ -20,6 +18,9 @@ Version: 1.0
 header.header{
 	display:none;
 }
+
+						/* Header - Nav */
+
 /* Padding Header */
 .elementor-810 .elementor-element.elementor-element-3de1334{
 	padding:0;
@@ -34,7 +35,7 @@ background-color:#DC9F96;
 display:flex;
 justify-content:center;
 position: relative;
-left: 79px;
+left:79px;
 }
 
 #menu-item-396:hover{
@@ -71,19 +72,36 @@ li.bloc-hfe-menu-item {
 	display: flex;
 }
 
+					   /* Page d'accueil */
 
-	/* Padding page d'accueil */
+/* Padding page d'accueil */
 
 .elementor-29 .elementor-element.elementor-element-52295bd:not(.elementor-motion-effects-element-type-background), .elementor-29 .elementor-element.elementor-element-52295bd > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-color: #ECE2DA;
     padding: 0px;
 }
 
-/* Padding derniere image page d'accueil */
+/* Padding 0 autour de bloc-plante */
+.elementor-29 .elementor-element.elementor-element-a449bc3:not(.elementor-motion-effects-element-type-background), .elementor-29 .elementor-element.elementor-element-a449bc3 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #FFFFFF;
+    padding: 0;
+}
 
-.elementor-29 .elementor-element.elementor-element-1f67501 {
-    
-    padding: 0px;
+/* Ombre sur l'extrêmité de la courbe de séparation L'énergie des Plantes */
+.bloc-plante div.elementor-shape.elementor-shape-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    width: 100%;
+    height: 76px;
+    fill: #ECE2DA;
+    background-color: #ECE2DA;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 /* Boutton commander page d'accueil */
@@ -110,6 +128,15 @@ color: #FFF;
 	background-color: #C02E44;
 }
 
+/* Padding derniere image page d'accueil */
+
+.elementor-29 .elementor-element.elementor-element-1f67501 {
+    
+    padding: 0px;
+}
+
+						/* Page COMMANDER */
+
 /* Page COMMANDER - Padding Bloc de Produits */
 
 .elementor-394 .elementor-element.elementor-element-328eccf.e-con {
@@ -129,50 +156,8 @@ input[type="number" i]{
 	padding-left:10px;
 }
 
-/* Page COMMANDER - PADDING AUTOUR DES FORMULAIRES */
-
-/* Padding autour du formulaire Vos informations */
-
-.elementor-394 .elementor-element.elementor-element-92096f4.e-con{
-	padding:0px;
-}
-
-/* Padding autour du formulaire Livraison */
-
-.elementor-394 .elementor-element.elementor-element-abc0ec8.e-con {
-    --flex-grow: 0;
-    --flex-shrink: 0;
-    padding: 0;
-}
-
-/* Padding autour du Séparateur des formulaires */
-
-.elementor-394 .elementor-element.elementor-element-4e3fb87 {
-    padding: 0;
-}
-
-/* Page COMMANDER - FORMULAIRES */
-
-input[type="text"],input[type="email"]{
-	width:383px;
-	height:71px;
-	Border-radius:7px;
-	margin-bottom:30px;
-	border: transparent;	
-}
-
-label {
-font-family: "Syne", Sans-serif;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color:#fff;
-display:flex;
-}
-
 /* Page COMMANDER - DISPOSITION BLOC IMAGES */
+
 .elementor-394 .elementor-element.elementor-element-328eccf.e-con {
     padding: 0px;
     display: flex;
@@ -224,11 +209,31 @@ h2.section-title-formulaire {
 	margin-bottom: 18px;
 }
 
+input[type="text"],input[type="email"]{
+	width:383px;
+	height:71px;
+	Border-radius:7px;
+	margin-bottom:30px;
+	border: transparent;	
+}
+
+label {
+font-family: "Syne", Sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#fff;
+display:flex;
+}
+
 .elementor-element.elementor-element-8640080.elementor-widget.elementor-widget-shortcode {
     width: 867px;
     display: flex;
     justify-content: center;
 }
+
 .elementor-394 .elementor-element.elementor-element-8846d15.e-con {
     --align-self: center;
     padding: 0;
@@ -284,6 +289,7 @@ button#bouton-commander:hover{
 	background-color:#C02E44;
 }
 
+					/* Page NOUS RENCONTRER */
 
 /* Page NOUS RENCONTRER - SECTION DU HAUT - FLEURE ET TITRE */
 
@@ -397,6 +403,11 @@ button#bouton-commander:hover{
 			flex-direction: column;	
 		}
 
+		.hfe-nav-menu__breakpoint-mobile .hfe-active-menu.hfe-active-menu-full-width + .hfe-nav-menu__layout-horizontal, .hfe-nav-menu__breakpoint-mobile .hfe-active-menu.hfe-active-menu-full-width + .hfe-nav-menu__layout-vertical {
+			position: absolute;
+			left: -210px;
+		}
+
 		#menu-item-398 {
 			display: flex;
 			justify-content: center;
@@ -420,12 +431,48 @@ button#bouton-commander:hover{
 			line-height: normal;
 			background-color: #DC9F96;
 		}
-
+		#menu-item-396 a:hover {
+			color: #FFF;
+			font-family: "Syne", Sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			background-color: #C02E44;
+		}
 		li.bloc-hfe-menu-item {
 			position: unset;
 			display: flex;
 			justify-content: center;
 		}
+								/* Page d'accueil */
+
+		/* Page d'accueil - Position Feuille verte Gauche côté cannette */
+		.elementor-element.elementor-element-cfd9eaf.elementor-absolute.feuille-gauche.elementor-widget.elementor-widget-image {
+			position: absolute;
+			left: 34px;
+			top: 64px;
+		}
+
+		/* Page d'accueil - Position Feuille verte Droite côté cannette */
+		div#feuille-droite {
+			position: absolute;
+			right: 37px;
+			top: 62px;
+		}
+		/* Position Canette section haut - Page d'accueil */
+			
+		.elementor-29 .elementor-element.elementor-element-236fc6b img {
+			max-width: 100%;
+			height: 400px;
+			margin-top: -650px;
+		}
+					
+		.elementor-101 .elementor-element.elementor-element-fdfab02{
+		max-width:320px;
+		padding:0;
+		}
+						/* Page Nous rencontrer */
 
         /* Position Fleur verte section haut - Page Nous rencontrer */
 
@@ -439,20 +486,33 @@ button#bouton-commander:hover{
             top: -26px;
             position: absolute;
         }
+		/* Section Formulaire */
 
-/* Position Canette section haut - Page d'accueil */
-			
-			.elementor-29 .elementor-element.elementor-element-236fc6b img {
-    max-width: 100%;
-    height: 400px;
-    margin-top: -650px;
-}
-			
-			.elementor-101 .elementor-element.elementor-element-fdfab02{
-				max-width:320px;
-				padding:0;
-		   }
-/* Position Input Quantité Produit - Page Commander */
+		input,
+		textarea,label {
+		max-width:250px;
+		display: flex;
+		justify-content: center;
+		margin: auto;		
+   		}
+ 
+   		div button {
+	 	margin: 0;
+	 	max-width: 140px;
+ 		}
+
+ 		.nous-rencontrer .bloc-button-nous-rencontrer {
+	 	display: flex;
+	 	justify-content: center;
+		 width: 320px;
+ 		}
+
+ 		.nous-rencontrer button:hover{
+	 	background-color:#C02E44;
+		}
+						/* Page Commander */
+
+		/* Position Input Quantité Produit - Page Commander */
 
 		.elementor-394 .elementor-element.elementor-element-f88476a > .elementor-widget-container {
 			margin: 0;
@@ -466,237 +526,216 @@ button#bouton-commander:hover{
 		.elementor-394 .elementor-element.elementor-element-161c0c0 > .elementor-widget-container {
 			margin: 0;
 		}
-	/* Section Formulaire */		
-		   input,
-		   textarea,label {
-        max-width:250px;
-		display: flex;
-		justify-content: center;
-		margin: auto;		
-			  }
+	
+		/* Section Commentaire - Espace entre le titre et le texte */
+
+		.elementor-29 .elementor-element.elementor-element-089e66c .elementor-image-box-wrapper .elementor-image-box-img{
+			margin-bottom:20px;
+		}
+
+		.elementor-29 .elementor-element.elementor-element-08f7b99 .elementor-image-box-wrapper .elementor-image-box-img{
+			margin-bottom:20px;
+		}
 			
-			  div button {
-				margin: 0;
-				max-width: 140px;
+		.elementor-29 .elementor-element.elementor-element-c8152d9 .elementor-image-box-wrapper .elementor-image-box-img{
+			margin-bottom:20px;
+		}
+
+		/* Section FORMULAIRE */
+
+		h2.section-title-formulaire {
+			font-family:"Syne", Sans-serif;
+			font-size: 23px;
+			font-weight: 700;
+			line-height: 36px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: white;
+			margin-bottom: 18px;
+			text-align: center;
 			}
 
-			.nous-rencontrer .bloc-button-nous-rencontrer {
-				display: flex;
-				justify-content: center;
-				width: 320px;
+		/* Séparateur horizontal */
+		.separator {
+			height: 1px;
+			width: 250px;
+			background-color: #fff;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin: auto;
+			margin-bottom: 20px;
+			margin-top: 20px;
 			}
 
-			.nous-rencontrer button:hover{
-				background-color:#C02E44;
-				  }
-			/* Section Commentaire - Espace entre le titre et le texte */
-
-.elementor-29 .elementor-element.elementor-element-089e66c .elementor-image-box-wrapper .elementor-image-box-img{
-				margin-bottom:20px;
+		.direction-row {
+			display: flex;
+			flex-direction: column;
+			width: 290px;
 			}
-
-.elementor-29 .elementor-element.elementor-element-08f7b99 .elementor-image-box-wrapper .elementor-image-box-img{
-				margin-bottom:20px;
-			}
-			
-.elementor-29 .elementor-element.elementor-element-c8152d9 .elementor-image-box-wrapper .elementor-image-box-img{
-				margin-bottom:20px;
-			}
-			h2.section-title-formulaire {
-				font-family:"Syne", Sans-serif;
-				font-size: 23px;
-				font-weight: 700;
-				line-height: 36px;
-				letter-spacing: 0em;
-				text-align: left;
-				color: white;
-				margin-bottom: 18px;
-				text-align: center;
-			}
-			/* Séparateur horizontal */
-			
-			.separator {
-				height: 1px;
-				width: 250px;
-				background-color: #fff;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				margin: auto;
-				margin-bottom: 20px;
-				margin-top: 20px;
-			}
-	.direction-row {
-		display: flex;
-		flex-direction: column;
-		width: 290px;
-		/* justify-content: space-between; */
 	}
-			
-	 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-	
-/* Section du haut - Page Nous-rencontrer */
 
-    .flower-title h1::before{
-        width: 90px;
-        height: 90px;
-        background: url(/wp-content/uploads/2023/11/Group-2.png);
-        background-size: cover;
-        content: "";
-        left: -92px;
-        top: -66px;
-        position: absolute;
-    }
-	/* Section Formulaire - Page Nous-rencontrer */
+					/* Page Nous-rencontrer */
+
+		/* Section du haut - Page Nous-rencontrer */
+
+    	.flower-title h1::before{
+    		width: 90px;
+        	height: 90px;
+        	background: url(/wp-content/uploads/2023/11/Group-2.png);
+        	background-size: cover;
+        	content: "";
+        	left: -92px;
+        	top: -66px;
+        	position: absolute;
+    	}
+
+		/* Section Formulaire - Page Nous-rencontrer */
 	
-	input,textarea,label{
-		width:383px;
+		input,textarea,label{
+			width:383px;
 		}
-	div.nous-rencontrer{
-		max-width:383px;
-	}
+		div.nous-rencontrer{
+			max-width:383px;
+		}
 	
-	.elementor-29 .elementor-element.elementor-element-c8152d9 {
-    width: 233px;
-    height: 103px;
-			  }
+		.elementor-29 .elementor-element.elementor-element-c8152d9 {
+    		width: 233px;
+    		height: 103px;
+		}
 	
-	.nous-rencontrer label{
-		display: block;
-		color: #000;
-		font-family: "Syne", Sans-serif;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-	}
+		.nous-rencontrer label{
+			display: block;
+			color: #000;
+			font-family: "Syne", Sans-serif;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
 
-	.nous-rencontrer input{
-		width: 383px;
-		height: 71px;
-		flex-shrink: 0;
-		margin-bottom: 15px;
-		border-radius: 7px;
-		background: #FFF;
-		box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
-	}
+		.nous-rencontrer input{
+			width: 383px;
+			height: 71px;
+			flex-shrink: 0;
+			margin-bottom: 15px;
+			border-radius: 7px;
+			background: #FFF;
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+		}
 
-	.nous-rencontrer textarea{
-		width: 383px;
-		height: 237px;
-		flex-shrink: 0;margin-bottom: 15px;
-		resize: none;
-		border-radius: 7px;
-		border:none;
-		background: #FFF;
-		box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
-		position :relative;
-		z-index:2;
-	}
+		.nous-rencontrer textarea{
+			width: 383px;
+			height: 237px;
+			flex-shrink: 0;margin-bottom: 15px;
+			resize: none;
+			border-radius: 7px;
+			border:none;
+			background: #FFF;
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+			position :relative;
+			z-index:2;
+		}
 
-	.nous-rencontrer button{
-		display: flex;
-		width: 198px;
-		height: 55px;
-		padding: 9px 0px;
-		justify-content: center;
-		align-items: center;
-		flex-shrink: 0;border-radius: 5px;
-		background: #E0B9B4;color: #FFF;
-		text-align: center;
-		font-family: Syne;
-		font-size: 15px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 37px;
-		border:none;
-	}
+		.nous-rencontrer button{
+			display: flex;
+			width: 198px;
+			height: 55px;
+			padding: 9px 0px;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;border-radius: 5px;
+			background: #E0B9B4;color: #FFF;
+			text-align: center;
+			font-family: Syne;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 37px;
+			border:none;
+		}		
 
-	.nous-rencontrer button:hover{
-		background-color:#C02E44;
-		  }
-	
-/* Section Formulaire - Page Commander */
+		.nous-rencontrer button:hover{
+			background-color:#C02E44;
+		}
 
-h2.section-title-formulaire {
-	font-family:"Syne", Sans-serif;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 36px;
-	letter-spacing: 0em;
-	text-align: left;
-	color: white;
-	margin-bottom: 18px;
-	text-align: center;
-}
+							/* Page Commander */
 
-div.elementor-shortcode{
-	max-width: 650px;
-}
-.direction-row {
-    display: flex;
-    flex-direction: column;
-    max-width: 650px;
-	
-}
+		/* Section Formulaire - Page Commander */
 
-.separator {
-	height: 1px;
-	width: 383px;
-	background-color: #fff;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin: auto;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
+		h2.section-title-formulaire {
+			font-family:"Syne", Sans-serif;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: white;
+			margin-bottom: 18px;
+			text-align: center;
+		}
 
-div.commander label{
-	width:290px;
-}
-	div.commander input{
-	width:290px;
-}
-	
-	div.commander textarea{
-	width:290px;
-}
+		div.elementor-shortcode{
+			max-width: 650px;
+		}
+		.direction-row {
+    		display: flex;
+    		flex-direction: column;
+    		max-width: 650px;	
+		}		
 
-.direction-row{
-	display: flex;
-	flex-direction: column;
-}
+		.separator {
+			height: 1px;
+			width: 383px;
+			background-color: #fff;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin: auto;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
 
-input,textarea,label {
-        max-width: 383px;
-		display: flex;
-		justify-content: center;
-		margin: auto;		
-			  }
-/* Section Blocs Produit - Page Commander */
+		div.commander label{
+			width:290px;
+		}
+		div.commander input{
+			width:290px;
+		}
+		div.commander textarea{
+			width:290px;
+		}
 
-.elementor-394 .elementor-element.elementor-element-bae8315 {
-    --width: 192px;
-    padding: 0;
-}
+		input,textarea,label {
+        	max-width: 383px;
+			display: flex;
+			justify-content: center;
+			margin: auto;		
+		}
 
-.elementor-394 .elementor-element.elementor-element-4e30bf4 {
-    --width: 192px;
-	padding: 0;
-}
+		/* Section Blocs Produit - Page Commander */
 
-.elementor-394 .elementor-element.elementor-element-0200878 {
-    --width: 192px;
-	padding: 0;
-}
+		.elementor-394 .elementor-element.elementor-element-bae8315 {
+    		--width: 192px;
+    		padding: 0;
+		}
 
-.elementor-394 .elementor-element.elementor-element-cfdf52f {
-    --width: 192px;
-    padding: 0;
-}
+		.elementor-394 .elementor-element.elementor-element-4e30bf4 {
+    		--width: 192px;
+			padding: 0;
+		}
 
-.elementor-394 .elementor-element.elementor-element-574755b {
-    --width: 670px;
-}
+		.elementor-394 .elementor-element.elementor-element-0200878 {
+   		 	--width: 192px;
+			padding: 0;
+		}
+
+		.elementor-394 .elementor-element.elementor-element-cfdf52f {
+    		--width: 192px;
+    		padding: 0;
+		}
+
+		.elementor-394 .elementor-element.elementor-element-574755b {
+   		 	--width: 670px;
+		}
 }

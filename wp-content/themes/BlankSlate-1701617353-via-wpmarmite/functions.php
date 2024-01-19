@@ -8,8 +8,8 @@ function wpchild_enqueue_styles(){
 
 
 // Ajoute un filtre pour modifier les éléments du menu de navigation WordPress
-add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 // Fonction appelée lors du filtrage des éléments du menu
 function add_admin_link($items, $args) {
     // Vérifie si l'utilisateur est connecté
